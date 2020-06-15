@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.ahsanb.tenantlib.util;
+package com.ahsanb.auth.util;
 
 /**
  * When the end user submits the login form, the tenant id is required to

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.ahsanb.tenantlib.tenant.config;
+package com.ahsanb.auth.tenant.config;
 
 import java.util.List;
 import java.util.Map;
@@ -29,10 +29,10 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
-import com.ahsanb.tenantlib.master.dao.MasterTenantRepository;
-import com.ahsanb.tenantlib.master.entities.MasterTenant;
-import com.ahsanb.tenantlib.util.DataSourceUtil;
-import com.ahsanb.tenantlib.util.TenantContextHolder;
+import com.ahsanb.auth.master.dao.MasterTenantRepository;
+import com.ahsanb.auth.master.entities.MasterTenant;
+import com.ahsanb.auth.util.DataSourceUtil;
+import com.ahsanb.auth.util.TenantContextHolder;
 
 /**
  * This class does the job of selecting the correct database based on the tenant

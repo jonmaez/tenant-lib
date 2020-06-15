@@ -1,4 +1,4 @@
-package com.ahsanb.tenantlib.security;
+package com.ahsanb.auth.security;
 
 import java.util.Map;
 
@@ -12,8 +12,8 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 
-import com.ahsanb.tenantlib.master.services.MasterTenantService;
-import com.ahsanb.tenantlib.util.TenantContextHolder;
+import com.ahsanb.auth.master.services.MasterTenantService;
+import com.ahsanb.auth.util.TenantContextHolder;
 
 /**
  * @author Md. Amran Hossain
@@ -28,7 +28,7 @@ public class RequestAuthorizationIntercept {
     @Autowired
     MasterTenantService masterTenantService;
 
-    @Around("@annotation(com.ahsanb.tenantlib.security.RequestAuthorization)")
+    @Around("@annotation(com.ahsanb.auth.security.RequestAuthorization)")
     public Object checkPermission(ProceedingJoinPoint pjp) throws Throwable {
         UserTenantInformation tenantInformation = applicationContext.getBean(UserTenantInformation.class);
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();

@@ -1,4 +1,4 @@
-package com.ahsanb.tenantlib.security;
+package com.ahsanb.auth.security;
 
 import java.lang.annotation.*;
 

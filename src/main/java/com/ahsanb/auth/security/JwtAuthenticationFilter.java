@@ -1,4 +1,4 @@
-package com.ahsanb.tenantlib.security;
+package com.ahsanb.auth.security;
 
 import java.io.IOException;
 
@@ -12,11 +12,11 @@ import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import com.ahsanb.tenantlib.master.entities.MasterTenant;
-import com.ahsanb.tenantlib.master.services.MasterTenantService;
-import com.ahsanb.tenantlib.util.JWTConstants;
-import com.ahsanb.tenantlib.util.JwtTokenUtil;
-import com.ahsanb.tenantlib.util.TenantContextHolder;
+import com.ahsanb.auth.master.entities.MasterTenant;
+import com.ahsanb.auth.master.services.MasterTenantService;
+import com.ahsanb.auth.util.JWTConstants;
+import com.ahsanb.auth.util.JwtTokenUtil;
+import com.ahsanb.auth.util.TenantContextHolder;
 
 import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.SignatureException;

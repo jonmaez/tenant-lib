@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.ahsanb.tenantlib.tenant.config;
+package com.ahsanb.auth.tenant.config;
 
 import java.util.HashMap;
 import java.util.Map;

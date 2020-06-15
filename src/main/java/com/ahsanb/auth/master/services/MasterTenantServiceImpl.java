@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.ahsanb.tenantlib.master.services;
+package com.ahsanb.auth.master.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.ahsanb.tenantlib.master.dao.MasterTenantRepository;
-import com.ahsanb.tenantlib.master.entities.MasterTenant;
+import com.ahsanb.auth.master.dao.MasterTenantRepository;
+import com.ahsanb.auth.master.entities.MasterTenant;
 
 /**
  * Implementation of the {@link MasterTenantService} which accesses the

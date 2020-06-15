@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.ahsanb.tenantlib.master.entities;
+package com.ahsanb.auth.master.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

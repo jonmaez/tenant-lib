@@ -1,4 +1,4 @@
-package com.ahsanb.tenantlib.util;
+package com.ahsanb.auth.util;
 
 /**
  * @author Md. Amran Hossain

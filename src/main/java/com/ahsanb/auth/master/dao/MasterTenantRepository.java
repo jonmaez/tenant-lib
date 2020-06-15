@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.ahsanb.tenantlib.master.dao;
+package com.ahsanb.auth.master.dao;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import com.ahsanb.tenantlib.master.entities.MasterTenant;
+import com.ahsanb.auth.master.entities.MasterTenant;
 
 /**
  * Repository for the {@link MasterTenant} JPA entity. Any custom methods, not

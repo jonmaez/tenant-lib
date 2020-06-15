@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.ahsanb.tenantlib.master.config;
+package com.ahsanb.auth.master.config;
 
 import java.util.Properties;
 
@@ -35,8 +35,8 @@ import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-import com.ahsanb.tenantlib.master.dao.MasterTenantRepository;
-import com.ahsanb.tenantlib.master.entities.MasterTenant;
+import com.ahsanb.auth.master.dao.MasterTenantRepository;
+import com.ahsanb.auth.master.entities.MasterTenant;
 import com.zaxxer.hikari.HikariDataSource;
 
 /**
@@ -50,8 +50,8 @@ import com.zaxxer.hikari.HikariDataSource;
  */
 @Configuration
 @EnableTransactionManagement
-@EnableJpaRepositories(basePackages = { "com.ahsanb.tenantlib.master.entities",
-        "com.ahsanb.tenantlib.master.dao" }, entityManagerFactoryRef = "masterEntityManagerFactory", transactionManagerRef = "masterTransactionManager")
+@EnableJpaRepositories(basePackages = { "com.ahsanb.auth.master.entities",
+        "com.ahsanb.auth.master.dao" }, entityManagerFactoryRef = "masterEntityManagerFactory", transactionManagerRef = "masterTransactionManager")
 public class MasterDatabaseConfig {
 
     private static final Logger LOG = LoggerFactory

@@ -1,4 +1,4 @@
-package com.ahsanb.tenantlib.security;
+package com.ahsanb.auth.security;
 
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;

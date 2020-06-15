@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.ahsanb.tenantlib.master.services;
+package com.ahsanb.auth.master.services;
 
 import org.springframework.data.repository.query.Param;
 
-import com.ahsanb.tenantlib.master.entities.MasterTenant;
+import com.ahsanb.auth.master.entities.MasterTenant;
 
 /**
  * Service definition which accesses the {@link MasterTenant} entity. This is

@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.ahsanb.tenantlib.tenant.config;
+package com.ahsanb.auth.tenant.config;
 
 import org.apache.commons.lang3.StringUtils;
 import org.hibernate.context.spi.CurrentTenantIdentifierResolver;
 
-import com.ahsanb.tenantlib.util.TenantContextHolder;
+import com.ahsanb.auth.util.TenantContextHolder;
 
 /**
  * Hibernate needs to know which database to use i.e. which tenant to connect

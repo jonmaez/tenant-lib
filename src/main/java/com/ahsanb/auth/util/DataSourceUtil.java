@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.ahsanb.tenantlib.util;
+package com.ahsanb.auth.util;
 
 import javax.sql.DataSource;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.ahsanb.tenantlib.master.entities.MasterTenant;
+import com.ahsanb.auth.master.entities.MasterTenant;
 import com.zaxxer.hikari.HikariDataSource;
 
 /**
