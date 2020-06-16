@@ -1,4 +1,3 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 com.ahsanb.tenantlib.master.config.MasterDatabaseConfig,\
-com.ahsanb.tenantlib.tenant.config.TenantDatabaseConfig,\
-com.ahsanb.tenantlib.tenant.config.DataSourceBasedMultiTenantConnectionProviderImpl
+com.ahsanb.tenantlib.tenant.config.TenantDatabaseConfig
