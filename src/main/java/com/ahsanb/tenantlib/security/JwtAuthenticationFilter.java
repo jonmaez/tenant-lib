@@ -42,6 +42,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             authToken = header.replace(JWTConstants.TOKEN_PREFIX,"");
             try {
                 audience = jwtTokenUtil.getAudienceFromToken(authToken);
+                System.out.println("in filter tenantID:" + audience);
                 MasterTenant masterTenant = masterTenantService.findByTenantId(audience);
                 if(null == masterTenant){
                     logger.error("An error during getting tenant name");

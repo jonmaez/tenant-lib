@@ -14,11 +14,11 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 @Configuration
 @EnableWebSecurity
-@ConditionalOnProperty(value = "rbac.enabled", havingValue = "true", matchIfMissing = true)
+//@ConditionalOnProperty(value = "rbac.enabled", havingValue = "true", matchIfMissing = true)
 @Order
-public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+public class TenantSecurityConfigurer extends WebSecurityConfigurerAdapter {
 	
-	@Bean
+	/*@Bean
 	@Override
 	public AuthenticationManager authenticationManagerBean() throws Exception {
 		return super.authenticationManagerBean();
@@ -27,7 +27,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Bean
 	public PasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();
-	}
+	}*/
 	
     @Bean
     public JwtAuthenticationFilter authenticationTokenFilterBean() throws Exception {

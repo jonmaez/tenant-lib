@@ -89,7 +89,10 @@ public class DataSourceBasedMultiTenantConnectionProviderImpl
 		// database 'master_tenant' table
 
 		tenantIdentifier = initializeTenantIfLost(tenantIdentifier);
-
+		
+		System.out.println("tenantID:" + tenantIdentifier);
+		System.out.println("dataSourcesMtApp:" + dataSourcesMtApp);
+		
 		if (!this.dataSourcesMtApp.containsKey(tenantIdentifier)) {
 			List<MasterTenant> masterTenants = masterTenantRepo.findAll();
 			LOG.info(
