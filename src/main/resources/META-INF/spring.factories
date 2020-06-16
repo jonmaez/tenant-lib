@@ -1,3 +1,5 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 com.ahsanb.tenantlib.master.config.MasterDatabaseConfig,\
-com.ahsanb.tenantlib.tenant.config.TenantDatabaseConfig
+com.ahsanb.tenantlib.tenant.config.TenantDatabaseConfig,\
+com.ahsanb.tenantlib.security.TenantSecurityConfigurer,\
+com.ahsanb.tenantlib.util.JwtTokenUtil

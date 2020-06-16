@@ -81,6 +81,7 @@ public class TenantDatabaseConfig {
     @Bean(name = "datasourceBasedMultitenantConnectionProvider")
     @ConditionalOnBean(name = "masterEntityManagerFactory")
     public MultiTenantConnectionProvider multiTenantConnectionProvider() {
+    	LOG.info("datasourceBasedMultitenantConnectionProvider set up successfully!");
         // Autowires the multi connection provider
         return new DataSourceBasedMultiTenantConnectionProviderImpl();
     }
